@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root{
+    --color--green: #06D001;
+    --color--orange1: #FFB200;
+    --color--red: #E72929;
+    --color--white: #fffffff1;
+    --green--gradient: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 8vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .text {
+    margin-left: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo .orange {
+    color: var(--color--orange1);
+}
+
+.logo .green {
+    color: var(--color--green);
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation ol {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation ol li a {
+    text-decoration: none;
+    color: var(--color--white);
+    font-weight: bold;
+}
+
+/* Main page styling */
+.main--page {
+    height: 100vh;
+    background-image: url('images/onionrings.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 8vh;
+}
+
+.main--text h1 {
+    color: white;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+/* Section 2 styling */
+.section2 {
+    height: auto;
+    background-color: var(--color--orange1);
+    color: var(--color--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.section2 .main--card {
+    display: flex;
+    gap: 15px;
+}
+
+.img--sec2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.section2 .image--text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section2 .image--text .text h4 {
+    margin: 0;
+}
+
+.section2 .image--text .text p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Section 3 styling */
+.section3 {
+    background-image: url('images/section3--bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color--white);
+    padding: 4rem 2rem;
+}
+
+.section3 .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section3 .grid--box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+}
+
+.section3 .image--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section3 .image--text img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.section3 .image--text .text h4 {
+    margin: 0;
+}
+
+.section3 .image--text .text p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+.section3 .limited{
+    max-width: 200px; /* Adjust this value to fit your needs */
+   line-height: 1.6; 
+}
+#change{
+    color: var(--color--orange1);
+    font-family: "Permanent Marker", cursive;
+}
+
+/* Section 4 styling */
+.section4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #000;
+    color: var(--color--white);
+}
+
+.section4 .info--1 {
+    text-align: center;
+    max-width: 400px;
+    
+}
+
+.section4 .info--1 h3 {
+    margin-bottom: 1rem;
+}
+
+.section4 .info--1 p {
+    margin-bottom: 1rem;
+}
+
+.section4 .info--1 button {
+    background: var(--color--orange1);
+    color: var(--color--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Section 5 styling */
+.section5 {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color--green);
+    color: var(--color--white);
+}
+
+.section5 .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section5 .mail .email {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.section5 .mail button {
+    background: var(--color--orange1);
+    color: var(--color--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
